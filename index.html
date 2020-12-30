@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function clicko(){
+            document.getElementById("mydropdown").classList
+            .toggle("show");
+        }
+        window.onclick = function(event){
+            if(!event.target.matches('.dropbtn')){
+                var dropdowns = document.getElementsByClassName
+                ("dropdown-content");
+                var i;
+                for(i=0;i<dropdowns.length;i++){
+                    var opendropdown = dropdowns[i];
+                    if(opendropdown.classList.contains('show')){
+                        // opendropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    
+
+
+
+
+    <script>
+        function toggle(){
+            var header = document.getElementById("header");
+            header.classList.toggle('active');
+        }
+    </script>
+    <header id="header">
+        <a href="#" class="logo">Joydip</a>
+        <ul>
+            <li><a href="#home" onclick="toggle()" class="active">Home</a></li>
+            <li><a href="#about" onclick="toggle()">About</a></li>
+            
+            <div class="dropdown">
+                <li><a href="#" onclick="clicko()">Services</a></li>
+                <div id="mydropdown" class="dropdown-content">
+                    <a href="#">HTML</a>
+                    <a href="yes.html">CSS</a>
+                    <a href="#">JAVASCRIPT</a>
+                </div>
+            </div>
+            
+
+            <li><a href="#portfolio" onclick="toggle()">Portfolio</a></li>
+            <li><a href="#team" onclick="toggle()">Team</a></li>
+            <li><a href="#contact" onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="home">
+        <div>
+            <h2>Joydip Paul</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae culpa dicta dignissimos,
+                velit iusto tempora quis provident sed consequuntur aspernatur minima porro, dolorem illo? Explicabo
+                alias,
+                culpa harum, tempore maxime minima molestiae quidem ut eligendi quibusdam, ipsum enim.
+                Rerum aliquid consectetur nam quae hic exercitationem, explicabo maiores voluptates nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore modi nemo corrupti reprehenderit
+                veniam id,
+                in iste animi asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio iusto nostrum incidunt
+                expedita!
+                Rem hic deserunt harum necessitatibus nisi.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="abc.jpg" alt="">
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae culpa dicta dignissimos,
+                velit iusto tempora quis provident sed consequuntur aspernatur minima porro, dolorem illo? Explicabo
+                alias,
+                culpa harum, tempore maxime minima molestiae quidem ut eligendi quibusdam, ipsum enim.
+                Rerum aliquid consectetur nam quae hic exercitationem, explicabo maiores voluptates nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore modi nemo corrupti reprehenderit
+                veniam id,
+                in iste animi asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio iusto nostrum incidunt
+                expedita!
+                Rem hic deserunt harum necessitatibus nisi.</p>
+        </div>
+    </section>
+
+    <section id="service">
+        <div>
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae culpa dicta dignissimos,
+                velit iusto tempora quis provident sed consequuntur aspernatur minima porro, dolorem illo? Explicabo
+                alias,
+                culpa harum, tempore maxime minima molestiae quidem ut eligendi quibusdam, ipsum enim.
+                Rerum aliquid consectetur nam quae hic exercitationem, explicabo maiores voluptates nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore modi nemo corrupti reprehenderit
+                veniam id,
+                in iste animi asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio iusto nostrum incidunt
+                expedita!
+                Rem hic deserunt harum necessitatibus nisi.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div>
+            <h2>Our Recent Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae culpa dicta dignissimos,
+                velit iusto tempora quis provident sed consequuntur aspernatur minima porro, dolorem illo? Explicabo
+                alias,
+                culpa harum, tempore maxime minima molestiae quidem ut eligendi quibusdam, ipsum enim.
+                Rerum aliquid consectetur nam quae hic exercitationem, explicabo maiores voluptates nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore modi nemo corrupti reprehenderit
+                veniam id,
+                in iste animi asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio iusto nostrum incidunt
+                expedita!
+                Rem hic deserunt harum necessitatibus nisi.</p>
+        </div>
+    </section>
+
+    <section id="team">
+        <div>
+            <h2>Our Expert</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae culpa dicta dignissimos,
+                velit iusto tempora quis provident sed consequuntur aspernatur minima porro, dolorem illo? Explicabo
+                alias,
+                culpa harum, tempore maxime minima molestiae quidem ut eligendi quibusdam, ipsum enim.
+                Rerum aliquid consectetur nam quae hic exercitationem, explicabo maiores voluptates nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore modi nemo corrupti reprehenderit
+                veniam id,
+                in iste animi asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio iusto nostrum incidunt
+                expedita!
+                Rem hic deserunt harum necessitatibus nisi.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae culpa dicta dignissimos,
+                velit iusto tempora quis provident sed consequuntur aspernatur minima porro, dolorem illo? Explicabo
+                alias,
+                culpa harum, tempore maxime minima molestiae quidem ut eligendi quibusdam, ipsum enim.
+                Rerum aliquid consectetur nam quae hic exercitationem, explicabo maiores voluptates nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore modi nemo corrupti reprehenderit
+                veniam id,
+                in iste animi asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio iusto nostrum incidunt
+                expedita!
+                Rem hic deserunt harum necessitatibus nisi.</p>
+        </div>
+    </section>
+</body>
+
+</html>
